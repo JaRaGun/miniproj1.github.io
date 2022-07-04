@@ -1,0 +1,54 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Familjen Grotesk', sans-serif;
+}
+body{
+    background: url(../image/image-background-1.svg);
+    background-position: center;
+    background-size: cover;
+}
+.navBar-html{
+    background: rgba( 255, 255, 255, 0.5);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 12.5px );
+    -webkit-backdrop-filter: blur( 12.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.main{
+    background: white;
+}
+#forHTML{
+    resize:none;
+    min-width: 100%;
+}
+
+hr.style15 {
+	border-top: 4px double #8c8b8b;
+	text-align: center;
+}
+hr.style15:after {
+	content: '\002665';
+	display: inline-block;
+	position: relative;
+	top: -15px;
+	padding: 0 10px;
+	background: #f0f0f0;
+	color: #8c8b8b;
+	font-size: 18px;
+}
+
+.structure
+{
+    border-radius: 52px;
+background: #e0e0e0;
+box-shadow:  21px 21px 47px #9d9d9d,
+             -21px -21px 47px #ffffff;
+}
+
+@media only screen and (max-width: 990px) {
+ 
+}

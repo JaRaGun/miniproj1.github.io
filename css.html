@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project 1</title>
+    <script>
+        function compileHTML(field,e){
+            document.getElementById('output').innerHTML = field.value;
+        }
+        function compileCSS(field,e){
+            document.getElementById('styling').innerHTML = field.value;
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/6e2e82ae66.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/css.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+ 
+  <style id="styling">
+
+  </style>
+
+    <!-- -------------------------------- NAVBAR ---------------------------------------------------- -->
+    <div class="container navBar-html">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+              <a class="navbar-brand text-dark fs-1" href="#"><img src="./image/4.png" alt="logo" width="50" height="50" >EZAS123</a>
+              <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item d-flex p-2">
+                    <a class="nav-link fs-5" aria-current="page" href="./index.html">HOME</a>
+                  </li>
+                  <li class="nav-item d-flex p-2">
+                    <a class="nav-link fs-5" href="./html.html">HTML</a>
+                  </li>
+                  <li class="nav-item d-flex p-2">
+                    <a class="nav-link active fs-5" href="#">CSS</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </div>
+     <!-- -------------------------------- NAVBAR ---------------------------------------------------- -->
+    
+    <!-- -------------------------------- INTRO CONTENT ---------------------------------------------------- -->
+    <div class="main rounded-5 container p-5 mt-5">
+        <div class="row p-3">
+            <section id="intro">
+                <h1>CSS</h1>
+                <p>Ang CSS ay ang wikang ginagamit namin sa pag-istilo ng isang Web page.</p>
+                <h2>Ano nga ba ang CSS?</h2>
+                <p>
+                  Ang Cascading Style Sheets ay isang style sheet na wika na ginagamit para sa paglalarawan ng presentasyon ng isang dokumentong nakasulat sa isang markup language gaya ng HTML o XML. Ang CSS ay isang pundasyong teknolohiya ng World Wide Web, kasama ng HTML at JavaScript.
+                <h2>CSS Syntax</h2>
+                <p>
+                  Ang isang panuntunan ng CSS ay binubuo ng isang tagapili at isang bloke ng deklarasyon.
+                </p>
+                <img class="img-fluid" src="https://www.w3schools.com/css/img_selector.gif" alt="">
+                <p>
+                  Itinuturo ng selector ang HTML element na gusto mong i-istilo.
+                  <br>
+                  Ang bloke ng deklarasyon ay naglalaman ng isa o higit pang mga deklarasyon na pinaghihiwalay ng mga semicolon.
+                  <br>
+                  Kasama sa bawat deklarasyon ang isang CSS property name at isang value, na pinaghihiwalay ng colon.
+                  <br>
+                  Ang maramihang mga deklarasyon ng CSS ay pinaghihiwalay ng mga semicolon, at ang mga bloke ng deklarasyon ay napapalibutan ng mga kulot na brace.
+                </p>
+                </p>
+                <h2>Halimbawa</h2>
+                <code>
+                  p {
+                    color: red;
+                    text-align: center;
+                  }
+                </code>
+                <ul>
+                  <li>Ang <code>p</code> ay isang tagapili o selector sa CSS (ito ay tumuturo sa HTML na elemento na gusto mong i-istilo).</li>
+                  <li>ang kulay ay isang pag-aari, at ang pula ay ang halaga ng pag-aari </li>
+                  <li>ang text-align ay isang property, at ang center ay ang property value</li>
+                </ul>
+            </section>
+     
+        </div>
+        <h2>CSS cheatsheet</h2>
+<section id="tags-1">
+            <h3>Backgrounds</h3>
+                <p>
+                  background <br>
+                  <code>
+                    background-image <br>
+                    background-position <br>
+                    background-size <br> 
+                    background-repeat<br> 
+                    background-attachment <br>
+                    background-origin<br>
+                    background-clip<br>
+                    background-color<br>
+                  </code>
+                    background-image<br>
+                  <code>
+                      url<br>
+                      gradients<br>
+                      none<br>
+                  </code>
+                    background-position<br>
+                  <code>
+                    top left | top center | top right | center left | center center |<br>
+                    center right | bottom left | bottom center | bottom right<br>
+                    x-% y-%<br>
+                    x-pos y-pos<br>
+                  </code>
+                  background-size<br>
+                    <code>
+                      length<br>
+                      %<br>
+                      auto | cover | contain<br>
+                    </code>
+                      background-repeat<br>
+                  <code>
+                    repeat | repeat-x | repeat-y |<br>
+                    no-repeat<br>
+                  </code>
+                  background-attachment<br>
+                  <code>
+                    scroll | fixed | local<br>
+                  </code>
+                  background-origin<br>
+                  <code>
+                    border-box | padding-box | content-box<br>
+                  </code>
+                  background-clip<br>
+                    <code>
+                      border-box | padding-box | content-box<br>
+                    </code>
+                    background-color<br>
+                    <code>
+                      color<br>
+                      transparent<br>
+                    </code>
+                </p>
+
+                <h3>Border</h3>
+                <p>
+<h4>
+  border <br>
+</h4>
+<code>
+border-width<br>
+border-style<br>
+border-color<br>
+
+</code>
+
+border-width<br>
+<code>
+thin | medium | thick | length<br>
+</code>
+
+border-style<br>
+<code>
+none | hidden | dotted |<br>
+dashed | solid | double |<br>
+groove | ridge | inset | outset<br>
+</code>
+
+border-color<br>
+<code>
+color<br>
+</code>
+
+border-bottom<br>
+<code>
+border-bottom-width<br>
+border-style<br>
+border-color<br>
+</code>
+
+border-left<br>
+<code>
+border-left-width<br>
+border-style<br>
+border-color<br>
+</code>
+
+border-left-style<br>
+<code>
+border-style<br>
+</code>
+
+border-right-color<br>
+<code>
+border-color<br>
+</code>
+
+border-right-width<br>
+<code>
+  thin | medium | thick | length<br>
+</code>
+
+border-top-width<br>
+<code>
+  thin | medium | thick | length<br>
+</code>
+
+border-break<br>
+<code>
+border-width<br>
+border-style<br>
+color<br>
+close<br>
+</code>
+
+border-bottom-color<br>
+<code>
+border-color<br>
+</code>
+
+border-bottom-style<br>
+<code>
+border-style<br>
+</code>
+
+border-left-color<br>
+<code>
+border-color<br>
+</code>
+
+border-left-width<br>
+<code>
+  thin | medium | thick length<br>
+</code>
+
+border-right-style<br>
+<code>
+  border-style<br>
+</code>
+
+border-top
+<code>
+  border-top-width<br>
+  border-style<br>
+  border-color<br>
+</code>
+
+
+border-top-color<br>
+<code>
+  border-color<br>
+</code>
+
+border-top-style<br>
+<code>
+  border-style<br>
+</code>
+
+box-shadow<br>
+<code>
+  inset || [ length, length, length, length || <color> ]<br>
+    none<br>
+</code>
+
+border-collapse<br>
+<code>
+  collapse | separate<br>
+</code>
+
+border-image<br>
+<code>
+  image
+  [ number / % border-width stretch | repeat | round ]<br>
+  none<br>
+</code>
+
+border-right<br>
+<code>
+  border-right-width<br>
+  border-style<br>
+  border-color<br>
+</code>
+
+border-radius<br>
+<code>
+  border-radius<br>
+  border-top-right-radius<br>
+  border-bottom-right-radius<br>
+  border-bottom-left-radius<br>
+  border-top-left-radius<br>
+</code>
+
+border-top-right-radius<br>
+<code>
+  length<br>
+</code>
+
+border-bottom-right-radius<br>
+<code>
+  length<br>
+</code>
+border-bottom-left-radius<br>
+<code><br>
+  length
+</code>
+                </p>
+</section>
+<section id="selectors">
+ <h3>Selectors</h3> 
+ <p>
+  * all elements <br>
+  div all div tags <br>
+  div,p all divs and paragraphs <br>
+  div p paragraphs inside divs <br>
+  div > p all p tags, one level deep in div <br>
+  div + p p tags immediately after div <br>
+  div ~ p p tags preceded by div <br>
+  .classname all elements with class <br>
+  #idname element with ID <br>
+  div.classname divs with certain classname <br>
+  div#idname div with certain ID <br>
+  #idname * all elements inside #idname <br>
+ </p>
+ <h4>Pseudo classes</h4>
+ <p>
+a:link link in normal state <br>
+a:active link in clicked state <br>
+a:hover link with mouse over it <br>
+a:visited visited link <br>
+p::after{content:"yo";}add content after p <br>
+p::before add content before p <br>
+input:checked checked inputs <br>
+input:disabled disabled inputs <br>
+input:enabled enabled inputs <br>
+input:focus input has focus <br>
+input:in-range value in range <br>
+input:out-of-range input value out of range <br>
+input:valid input with valid value <br>
+input:invalid input with invalid value <br>
+input:optional no required attribute<br>
+input:required input with requred attribute <br>
+input:read-only with readonly attribute <br>
+input:read-write no readonly attrib.<br>
+div:empty element with no children<br>
+p::first-letter first letter in p<br>
+p::first-line first line in p<br>
+p:first-of-type first of some type<br>
+p:last-of-type last of some type<br>
+p:lang(en) p with en language attribute<br>
+:not(span) element that's not a span<br>
+p:first-child first child of its parent<br>
+p:last-child last child of its parent<br>
+p:nth-child(2) second child of its parent<br>
+p:nth-child(3n+1) nth-child (an + b) formula<br>
+p:nth-last-child(2) second child from behind<br>
+p:nth-of-type(2) second p of its parent<br>
+p:nth-last-of-type(2) ...from behind<br>
+p:only-of-type unique of its parent<br>
+p:only-child only child of its parent<br>
+:root documents root element<br>
+::selection portion selected by user<br>
+:target highlight active anchor
+ </p>
+ <h4>Attribute selectors </h4>
+ <p>
+a[target]links with a target attribute <br>
+a[target="_blank"] links which open in new tab <br>
+[title~="chair"] title element containing a word <br>
+[class^="chair"] class starts with chair <br>
+[class|="chair"] class starts with the chair word <br>
+[class*="chair"] class contains chair <br>
+[class$="chair"] class ends with chair <br>
+input[type="button"] specified input type <br>
+ </p>
+</section>
+
+<section id="basics" >
+  <h3>Basics</h3>
+  <h4>Syntax</h4>
+ <code>
+  selector{
+    property: value;
+    property2: value2;
+    }
+ </code>
+ <h4>Include external css file</h4>
+  <code>&lt;link rel="stylesheet" type="text/css" href="/style.css"/></code>
+  <h4>Internal styles</h4>
+  <code>
+    &lt;style type="text/css"> <br>
+      div { color: #444;} <br>
+      &lt;/style>
+  </code>
+  <h4>Inline styles</h4>
+  <code>
+    &lt;tag style="property: value"> &lt;/tag>
+  </code>
+</section>
+
+<section id="properties">
+  <h3>Properties</h3>
+  <p>
+align-contentbehavior of the flex-wrap property <br>
+align-itemsalignment for items inside the container <br>
+align-selfalignment for the selected item <br>
+allchanges all properties <br>
+animationbinds an animation to an element <br>
+animation-delaydelays animation start <br>
+animation-directionreverse animation or in alternate cycles <br>
+animation-durationanimation duration in seconds or ms<br>
+animation-fill-modestyle when the animation is not playing<br>
+animation-iteration-countnumber of an animation replays<br>
+animation-namename for the @keyframes animation<br>
+animation-play-statethe animation is running or paused<br>
+animation-timing-functionspeed curve of an animation<br>
+backface-visibilityis element visible when not facing the screen<br>
+backgroundall background properties in one declaration<br>
+background-attachmentis the background image fixed or scrolls<br>
+background-blend-modeblending mode of each background layer<br>
+background-clippainting area of the background<br>
+background-colorbackground color<br>
+background-imagebackground image<br>
+background-originwhere the background image is positioned<br>
+background-positionstarting position of the background image<br>
+background-repeatthe way the background image is repeated<br>
+background-sizebackground image size<br>
+bordersets all border properties in one line<br>
+border-bottombottom border properties in one line<br>
+border-bottom-colorcolor of the bottom border<br>
+border-bottom-left-radiusborder bottom left radius<br>
+border-bottom-right-radiusborder bottom right radius<br>
+border-bottom-styleborder bottom style<br>
+border-bottom-widthborder bottom width<br>
+border-collapseborder collapse<br>
+border-colorborder color<br>
+border-imagesets an image as border<br>
+border-image-outsetborder image area extends beyond the border box<br>
+border-image-repeatborder image repeated, rounded or stretched<br>
+border-image-slicehow to slice the border image<br>
+border-image-sourcepath to the border image<br>
+border-image-widthborder image width<br>
+border-leftleft border properties in one line<br>
+border-left-colorborder left color<br>
+border-left-styleborder left style<br>
+border-left-widthborder left width<br>
+border-radiusborder radius of the four rounded corners<br>
+border-rightright border properties in one line<br>
+border-right-colorborder right color<br>
+border-right-styleborder right style<br>
+border-right-widthborder right width<br>
+border-spacingborder spacing<br>
+border-styleborder style<br>
+border-toptop border properties in one line<br>
+border-top-colorborder top color<br>
+border-top-left-radiusborder top left radius<br>
+border-top-right-radiusborder top right radius<br>
+border-top-styleborder top style<br>
+border-top-widthborder top width<br>
+border-widthborder width<br>
+bottombottom offset for relative and absolute elements<br>
+box-shadowshadow to element<br>
+box-sizingbox sizing properties<br>
+caption-sideplacement of a table caption<br>
+cleardeny floating of an element<br>
+clipclip an absolutely positioned element<br>
+colortext color<br>
+column-countdivide the content in columns<br>
+column-fillbalanced fill or not<br>
+column-gapgap between the columns<br>
+column-ruleseparator between columns, like border<br>
+column-rule-colorcolumn rule color<br>
+column-rule-stylecolumn rule style<br>
+column-rule-widthcolumn rule width<br>
+column-span column span<br>
+column-widthcolumn width<br>
+columnsset column-width and column-count<br>
+contentinsert content :before and :after elements<br>
+counter-incrementcount sections<br>
+counter-resetreset counter<br>
+cursorcursor type when element is hovered<br>
+directionwriting direction, Arabic is using rtl<br>
+displaybox display type<br>
+empty-cellshide borders and background on empty table cells<br>
+filterimage effects: grayscale, blur, invert etc.<br>
+flexitem length, relative to others inside the container<br>
+flex-basisinitial length of a flexible item<br>
+flex-directiondirection of the flexible items<br>
+flex-flowshorthand for flex-direction and flex-wrap<br>
+flex-growhow much the item will grow relative other items<br>
+flex-shrinkhow to shrink the item relative to other items<br>
+flex-wrapwrap flexible items<br>
+floatfloat elements left or right<br>
+fontall font properties in one line<br>
+@font-facedeclare non-web-safe fonts<br>
+font-familyfont of the element<br>
+font-sizefont size<br>
+font-size-adjustcontrol font size if the first declared option is not available<br>
+font-stretchwiden or narrow text<br>
+font-stylefont style: normal, italic, oblique<br>
+font-variantset small-caps<br>
+font-weightuse bold or thin characters<br>
+hanging-punctuationcan a punctuation mark be placed outside the line box?<br>
+heightheight of the element<br>
+justify-contentjustifies flexible container's items horizontally if necessary<br>
+@keyframesspecifies the animation code<br>
+leftleft offset for relative and absolute elements<br>
+letter-spacingspace between characters<br>
+line-heightline height of text or inline-block elements<br>
+list-styleall list properties in one line<br>
+list-style-imagereplace the list item marker with an image<br>
+list-style-positionlist item markers inside or outside the content flow<br>
+list-style-typeset the type of the list item marker<br>
+marginset the top, right, bottom and left margins in one line<br>
+margin-bottombottom margin<br>
+margin-leftleft margin<br>
+margin-rightright margin<br>
+margin-topmargin top<br>
+max-heightmaximum height of element<br>
+max-widthmaximum width of element<br>
+@mediasee media queries<br>
+min-heightminimum height<br>
+min-widthminimum width<br>
+nav-downwhere to navigate when the the arrow-down button is pressed<br>
+nav-indexsets sequential navigation order<br>
+nav-leftwhere to navigate when the the arrow-left button is pressed<br>
+nav-rightwhere to navigate when the the arrow-right button is pressed<br>
+nav-upwhere to navigate when the the arrow-up button is pressed<br>
+opacitytransparency level of an element<br>
+orderreorder elements in a container<br>
+outlinedrow an outer border around elements<br>
+outline-coloroutline color<br>
+outline-offsetgap between the element and the outline<br>
+outline-styleoutline style<br>
+outline-widthoutline width<br>
+overflowhide, display or scroll if the content overflows its container<br>
+overflow-xhorizontal overflow<br>
+overflow-yvertical overflow<br>
+paddingpadding between the element border and content<br>
+padding-bottompadding bottom<br>
+padding-leftpadding left<br>
+padding-rightpadding right<br>
+padding-toppadding top<br>
+page-break-afteradds page break after an element<br>
+page-break-beforeadds page break before an element<br>
+page-break-insideallow page break inside an element<br>
+perspectivehow many pixels the 3D element is placed from the view<br>
+perspective-originwhere is the 3D element based in the x- and y-axis<br>
+positionpositioning type: absolute, fixed, relative, static<br>
+quotesset quotation marks to wrap an element<br>
+resizedeclare resizable elements<br>
+rightright offset for relative and absolute elements<br>
+tab-sizetab character space length<br>
+table-layouttable layout algorithm<br>
+text-alignhorizontal alignment of text<br>
+text-align-lasthorizontal alignment of last line of text<br>
+text-decorationoverline, underline or line-through the text<br>
+text-indentindentation of the first line of the text<br>
+text-overflowthe way how overflowed content is marked (ellipsis)<br>
+text-shadowtext shadow<br>
+text-transformcapitalization of text<br>
+toptop offset for relative and absolute elements<br>
+transform2D 3D transformation. See widget.<br>
+transform-originchanges the position of transformed elements<br>
+transform-stylerender nested elements in 3D<br>
+transitiontransition properties in one line<br>
+transition-delaydelay before transition effect start<br>
+transition-durationtransition effect duration<br>
+transition-propertywhich CSS property is the transition affecting<br>
+transition-timing-functionspeed curve of the transition<br>
+unicode-bidishould the text be overridden to support more languages<br>
+user-selectdisable user content selection<br>
+vertical-alignvertical alignment<br>
+visibilityvisibility:hidden elements leave a gap<br>
+white-spacehow are white-spaces handled<br>
+widthwidth of an element<br>
+word-breaktext breaking rules when text reaches the end of the container<br>
+word-spacingsize of white space between words<br>
+word-wrapbreak long words and wrap onto the next line<br>
+z-indexstack order of the element
+  </p>
+</section>
+
+         <!-- -------------------------------- COMPILER---------------------------------------------------- -->
+        <section id="compiler">
+          <h2 class="text-center">Compiler</h2>
+            <div class="row">
+              <div class="col-sm-12 col-md-4 col-lg-4 col-12 form-floating">
+                <textarea class="form-control" placeholder="htmlcodehere" onkeyup="compileHTML(this)" id="forHTML" style="height: 100px"></textarea>
+                <label class="ms-3"for="forHTML">HTML Code here:</label>
+              </div>
+              <div class="col-sm-12 col-md-4 col-lg-4 col-12 form-floating">
+                <textarea class="form-control" id="forcss" onkeyup="compileCSS(this)" placeholder="css code here" style="height: 100px"></textarea>
+                <label class="ms-3"for="forcss">CSS code here:</label>
+              </div>
+              <div id="output"class="col-sm-12 col-md-4 col-lg-4 col-12">
+                <style id="styling"></style>
+              </div>
+          </div>
+        </section>
+         
+        <!-- -------------------------------- COMPILER---------------------------------------------------- -->
+</div>              
+          <!-- -------------------------------- FOOTER --------------------------------------------------- -->
+      
+  
+      
+      <div id="more-4"class="content-6 vh-25">
+        <footer class="text-center text-lg-start" style="background-color: #2980B9
+        ;">
+          <div class="container d-flex justify-content-center py-5">
+            <button type="button" class="btn btn-primary btn-lg btn-floating rounded-circle mx-2" style="background-color: #54456b;">
+              <i class="fab fa-bounce fa-facebook-f"></i>
+            </button>
+            <button type="button" class="btn btn-primary btn-lg btn-floating rounded-circle mx-2" style="background-color: #54456b;">
+              <i class="fab fa-bounce fa-youtube"></i>
+            </button>
+            <button type="button" class="btn btn-primary btn-lg btn-floating rounded-circle mx-2" style="background-color: #54456b;">
+              <i class="fab fa-bounce fa-instagram"></i>
+            </button>
+            <button type="button" class="btn btn-primary btn-lg btn-floating rounded-circle mx-2" style="background-color: #54456b;">
+              <i class="fab fa-bounce fa-twitter"></i>
+            </button>
+          </div>
+      
+          <!-- Copyright -->
+          <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:
+            <a class="text-white" href="#">DikaNiyaMahal.com</a>
+          </div>
+          <!-- Copyright -->
+        </footer>
+      </div>
+            <!-- -------------------------------- FOOTER --------------------------------------------------- -->
+
+    <!-- -------------------------------- JAVASCRIPT --------------------------------------------------- -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+     <!-- -------------------------------- JAVASCRIPT --------------------------------------------------- -->
+</body>
+</html>
